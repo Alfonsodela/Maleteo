@@ -20,7 +20,7 @@
 		<div class="wrapper">
 			<div class="container-fluid">
 				<header class="header">
-					<img src="assets/img/logo.svg" alt="Maleteo">
+					<img src="/img/logo.svg" alt="Maleteo">
 				</header>
 			</div>
 		</div>
@@ -33,17 +33,17 @@
 								<div class="jumbo__ww-title">
 									<div class="jumbo__w-title">
 										<h1 class="jumbo__title heading1">
-											Gana dinero guardando equipaje a viajeros como tu
+											Gana dinero guardando equipaje a viajeros como tú
 										</h1>
 										<ul class="jumbo__app-btns">
 											<li>
 												<a href="#">
-													<img src="assets/img/app-store.svg" alt="" class="jumbo__app-btn">
+													<img src="/img/app-store.svg" alt="" class="jumbo__app-btn">
 												</a>
 											</li>
 											<li>
 												<a href="">
-													<img src="assets/img/google-play.svg" alt="" class="jumbo__app-btn">
+													<img src="/img/google-play.svg" alt="" class="jumbo__app-btn">
 												</a>
 											</li>
 										</ul>
@@ -82,7 +82,7 @@
 								<div class="howworks__step">
 									<div class="howworks__step-w-bola">
 										<div class="howworks__step-bola">
-											<span class="heading3">1</span>
+											<span class="heading3">2</span>
 										</div>
 									</div>
 									<div class="howworks__step-w-txt">
@@ -99,7 +99,7 @@
 								<div class="howworks__step">
 									<div class="howworks__step-w-bola">
 										<div class="howworks__step-bola">
-											<span class="heading3">1</span>
+											<span class="heading3">3</span>
 										</div>
 									</div>
 									<div class="howworks__step-w-txt">
@@ -115,21 +115,29 @@
 						</ol>
 					</section>
 
+
 					<section class="app-form">
 						<div class="row">
 							<div class="col-md-5">
 								<div class="app-form__w-app-img">
-									<img src="assets/img/iPhoneX.png" srcset="assets/img/iPhoneX@2x.png 2x, assets/img/iPhoneX.png 1x" alt="" class="app-form__app-img">
+									<img src="/img/iPhoneX.png" srcset="/img/iPhoneX@2x.png 2x, /img/iPhoneX.png 1x" alt="" class="app-form__app-img">
 								</div>
 							</div>
 							<div class="col-md-5 col-md-offset-1">
 								<div class="the-form">
-									<form action="">
+									<form action="http://localhost:8000/maleteo" method="post">
 										<p class="the-form__title heading3">
 											Solicita una demo
 										</p>
 
 										<div class="the-form__group">
+										{{form_start(registroForm) }}
+										{{ form_widget(registroForm)}}
+										<button type="submit" class="the-form__btn btn btn-lg btn-primary">Enviar</button>
+										{{ form_end(registroForm)}}
+											</div>
+
+										{# <div class="the-form__group">
 											<label for="name">
 												Nombre
 											</label>
@@ -162,7 +170,7 @@
 											</label>
 										</div>
 
-										<input type="button" class="the-form__btn btn btn-lg btn-primary" value="Enviar">
+										<input type="button" class="the-form__btn btn btn-lg btn-primary" value="Enviar"> #}
 									</form>
 								</div>
 							</div>
@@ -222,7 +230,7 @@
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="container-fluid">
-					<img src="assets/img/logo.svg" alt="Maleteo" class="footer__logo">
+					<img src="/img/logo.svg" alt="Maleteo" class="footer__logo">
 					<p class="footer__claim">
 						Hecho con ❤️en Madrid
 					</p>

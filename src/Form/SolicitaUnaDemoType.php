@@ -15,7 +15,6 @@ class SolicitaUnaDemoType extends AbstractType
             ->add('nombre')
             ->add('Email')
             ->add('Ciudad')
-            ->add('no')
         ;
     }
 
