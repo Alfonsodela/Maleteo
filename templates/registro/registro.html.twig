@@ -8,6 +8,7 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Catamaran:400,500&display=swap" rel="stylesheet">
+		{# {% block style %} {% endblock %} #}
 		{# <link rel="stylesheet" href="assets/styles/styles.css"> #}
 		{% block assets %}
             {{ encore_entry_link_tags('app') }}
@@ -133,6 +134,7 @@
 										<div class="the-form__group">
 										{{form_start(registroForm) }}
 										{{ form_widget(registroForm)}}
+										{# {{ form_row(registroForm)}} #}
 										<button type="submit" class="the-form__btn btn btn-lg btn-primary">Enviar</button>
 										{{ form_end(registroForm)}}
 										</div>
